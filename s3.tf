@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bad_example_bucket" {
-  bucket = "sensitive-data-bucket"
+  bucket = "sensitive-data-bucket-test"
 
   # Disable encryption - Bad practice
   server_side_encryption_configuration {
